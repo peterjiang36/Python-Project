@@ -1,16 +1,25 @@
-# print("Welcome to the rollercoaster!")
-# height = int(input("What is your height in cm? "))
-#
-# if height > 120:
-#     print("You can ride the rollercoaster")
-# else:
-#     print("Sorry you have to grow taller before you can ride")
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
 
-print(10 % 3)
+if height > 120:
+    print("You can ride the rollercoaster")
 
-number = int(input("What is the number you want to check? "))
+    age = int(input("What is your age? "))
+    if age <= 12:
+        print("Please pay $5.")
+    elif age <= 18:
+        print("Please pay $7")
+    else:
+        print("Please pay $12")
 
-if number % 2 == 0:
-    print(f"{number} is a even number!")
 else:
-    print(f"{number} is a odd number!")
+    print("Sorry you have to grow taller before you can ride")
+
+# print(10 % 3)
+#
+# number = int(input("What is the number you want to check? "))
+#
+# if number % 2 == 0:
+#     print(f"{number} is a even number!")
+# else:
+#     print(f"{number} is a odd number!")
