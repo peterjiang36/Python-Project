@@ -28,9 +28,9 @@ print("Your mission is to find the treasure!")
 
 direction = input('You are now at a cross. Would you like to go "left" or "right"? ').lower()
 if direction == "left":
-    action = input('You are now at a lake. Would you like to "swim" or "wait"? ')
+    action = input('You are now at a lake. Would you like to "swim" or "wait"? ').lower()
     if action == "wait":
-        door = input('You are now at a door. Which color of door would you like to go in? "red", "blue" or "yellow"? ')
+        door = (input('You are now at a door. Which color of door would you like to go in? "red", "blue" or "yellow"? ').lower())
         if door == "red":
             print("Burned by fire.")
             print("Game Over!")
