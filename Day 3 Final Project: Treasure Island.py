@@ -26,11 +26,11 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure!")
 
-direction = input("You are now at a cross. Would you like to go 'left' or 'right'? ")
+direction = input('You are now at a cross. Would you like to go "left" or "right"? ').lower()
 if direction == "left":
-    action = input("You are now at a lake. Would you like to 'swim' or 'wait'? ")
+    action = input('You are now at a lake. Would you like to "swim" or "wait"? ')
     if action == "wait":
-        door = input("You are now at a door. Which color of door would you like to go in? 'red', 'blue or 'yellow'? ")
+        door = input('You are now at a door. Which color of door would you like to go in? "red", "blue" or "yellow"? ')
         if door == "red":
             print("Burned by fire.")
             print("Game Over!")
