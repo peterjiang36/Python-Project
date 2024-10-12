@@ -3,6 +3,9 @@ def my_function():
     print("Bye")
 
 
-my_function()
+# my_function()
 
-
+a = 0
+while a < 2:
+    print("Hello World")
+    a += 1
