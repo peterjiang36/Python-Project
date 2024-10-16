@@ -1,59 +1,8 @@
 # Step 1
 
 import random
-
-stages = [r'''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========''', r'''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========''', r'''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========''', r'''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', r'''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========''', r'''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========''', r'''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========''']
-
-word_list = ["aardvark", "baboon", "camel"]
+from hangman_words import word_list
+from hangman_art import stages, logo
 
 lives = 6
 
