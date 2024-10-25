@@ -1,44 +1,22 @@
 def calculate_love_score(name1, name2):
-    score1 = 0
-    for letter in name1:
-        if letter.upper() == "T":
-            score1 += 1
-        elif letter.upper() == "R":
-            score1 += 1
-        elif letter.upper() == "U":
-            score1 += 1
-        elif letter.upper() == "E":
-            score1 += 1
-    for letter in name2:
-        if letter.upper() == "T":
-            score1 += 1
-        elif letter.upper() == "R":
-            score1 += 1
-        elif letter.upper() == "U":
-            score1 += 1
-        elif letter.upper() == "E":
-            score1 += 1
+    combined_names = name1 + name2
+    lower_names = combined_names.lower()
 
-    score2 = 0
-    for letter in name1:
-        if letter.upper() == "L":
-            score2 += 1
-        elif letter.upper() == "O":
-            score2 += 1
-        elif letter.upper() == "V":
-            score2 += 1
-        elif letter.upper() == "E":
-            score2 += 1
-    for letter in name2:
-        if letter.upper() == "L":
-            score2 += 1
-        elif letter.upper() == "O":
-            score2 += 1
-        elif letter.upper() == "V":
-            score2 += 1
-        elif letter.upper() == "E":
-            score2 += 1
-    print(score1 * 10 + score2)
+    t = lower_names.count("t")
+    r = lower_names.count("r")
+    u = lower_names.count("u")
+    e = lower_names.count("e")
+    first_digit = t + r + u + e
+
+
+    l = lower_names.count("l")
+    o = lower_names.count("o")
+    v = lower_names.count("v")
+    e = lower_names.count("e")
+    second_digit = l + o + v + e
+
+    score = first_digit * 10 + second_digit
+    print(score)
 
 
 calculate_love_score("Kanye West", "Kim Kardashian")
