@@ -9,3 +9,7 @@ programming_dictionary["Loop"] = "The action of doint something over and over ag
 print(programming_dictionary)
 
 
+# programming_dictionary = {}
+# print(programming_dictionary)
+programming_dictionary["Bug"] = "A moth in your computer"
+print(programming_dictionary)
