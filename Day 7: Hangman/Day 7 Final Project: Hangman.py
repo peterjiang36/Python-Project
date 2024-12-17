@@ -7,7 +7,6 @@ print(logo)
 lives = 6
 
 chosen_word = random.choice(word_list)
-print(chosen_word)
 
 placeholders = ""
 for count in range(1, len(chosen_word) + 1):

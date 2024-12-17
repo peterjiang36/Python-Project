@@ -3,4 +3,4 @@ def life_in_weeks(age):
     print(f"You have {number_of_weeks} weeks left.")
 
 
-life_in_weeks(56)
+life_in_weeks(35)
