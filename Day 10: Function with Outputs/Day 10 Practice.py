@@ -3,21 +3,23 @@
 #     return result
 #
 #
-# def format_name(f_name, l_name):
-#     formated_f_name = f_name.title()
-#     formated_l_name = l_name.title()
+def format_name(f_name, l_name):
+    if f_name == "" or l_name == "":
+
+        formated_f_name = f_name.title()
+        formated_l_name = l_name.title()
+
+        return f"{formated_f_name} {formated_l_name}"
+
+
+print(format_name(input("What is your first name?"), input("What is your last name?")))
+
+
+# def function_1(text):
+#     return text + text
 #
-#     return f"{formated_f_name} {formated_l_name}"
+# def function_2(text):
+#     return text.title()
 #
-#
-# print(format_name("PeTeR", "JiANg"))
-
-
-def function_1(text):
-    return text + text
-
-def function_2(text):
-    return text.title()
-
-output = function_2(function_1("hello"))
-print(output)
+# output = function_2(function_1("hello"))
+# print(output)
