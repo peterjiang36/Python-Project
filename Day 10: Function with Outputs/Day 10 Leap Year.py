@@ -1,6 +1,8 @@
 def is_leap_year(year):
-    # Write your code here.
-    # Don't change the function name.
+    """ A function that consider if the year is a leap year or not
+    :param year: integer that representing the year
+    :return:
+    """
     if year % 4 == 0:
         # return ("divided by 4 has no reminder")
         if year % 100 == 0:
