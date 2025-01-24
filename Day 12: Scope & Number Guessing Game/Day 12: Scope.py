@@ -1,11 +1,13 @@
-# enemies = 1
-#
-# def increase_enemies():
-#     print(f"enemies inside function: {enemies}")
-#
-#
-# increase_enemies()
-# print(f"enemies outside function: {enemies}")
+enemies = 1
+
+def increase_enemies(enemy):
+
+    print(f"enemies inside function: {enemies}")
+    return enemy + 1
+
+
+enemies = increase_enemies(enemies)
+print(f"enemies outside function: {enemies}")
 #
 # local scope
 # def drink_potion():
@@ -22,11 +24,11 @@
 #     print(player_health)
 # drink_potion()
 
-game_level = 10
-enemies = ["Skeleton", "Zombie", "Alien"]
-def create_enemy():
-    new_enemy = ""
-    if game_level < 5:
-        new_enemy = enemies[0]
-    print(new_enemy)
-create_enemy()
+# game_level = 10
+# enemies = ["Skeleton", "Zombie", "Alien"]
+# def create_enemy():
+#     new_enemy = ""
+#     if game_level < 5:
+#         new_enemy = enemies[0]
+#     print(new_enemy)
+# create_enemy()
